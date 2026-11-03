@@ -1,0 +1,31 @@
+:root {
+  --bg-night:    #0A1128; /* azul-noite, fundo principal */
+  --bg-panel:    #121C3D; /* cards e painéis */
+  --bg-ink:      #070707; /* preto para a capa contraste */
+
+  --justice-blue: #1E4FD8; /* azul principal, botões e links */
+  --hero-red:     #D7263D; /* destaque forte, selos e numeração */
+  --hero-gold:    #F2B134; /* títulos, molduras e detalhes especiais */
+
+  --steel:        #9AA5B8; /* prata, textos secundários e bordas */
+  --paper:        #F3F4F7; /* texto principal e áreas claras */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--bg-night);
+  background-image: radial-gradient(circle at center, var(--bg-night) 0%, var(--bg-panel) 60%, var(--bg-ink) 100%);
+  color: var(--paper);
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+}
