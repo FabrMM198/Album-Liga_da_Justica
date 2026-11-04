@@ -1,0 +1,26 @@
+.stickers-grid {
+  height: calc(100% - 48px);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-content: start;
+  gap: 6px;
+  padding: 8px;
+}
+
+.sticker-slot {
+  min-height: 0;
+  padding: 7px;
+  border: 1px solid rgba(30, 79, 216, 0.5);
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.slot-number { color: var(--hero-red); font-size: 0.72rem; font-weight: 800; }
+.slot-name {
+  color: var(--bg-panel);
+  font-size: 0.78rem;
+  font-weight: 800;
+  line-height: 1.05;
+  margin: 2px 0 4px;
+}
+.slot-role { font-size: clamp(0.48rem, 1.25vw, 0.62rem); line-height: 1.15; }

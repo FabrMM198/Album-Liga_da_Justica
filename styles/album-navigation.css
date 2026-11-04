@@ -1,0 +1,28 @@
+.album-navigation {
+  position: fixed;
+  left: 50%;
+  bottom: 18px;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  transform: translateX(-50%);
+}
+
+.album-navigation button {
+  width: 44px;
+  height: 44px;
+  border: 1px solid var(--hero-gold);
+  border-radius: 50%;
+  background: var(--bg-panel);
+  color: var(--paper);
+  font-size: 1.35rem;
+  cursor: pointer;
+}
+
+.album-navigation button:disabled { opacity: 0.35; cursor: default; }
+.page-counter { min-width: 70px; text-align: center; font-size: 0.85rem; }
+
+@media (max-height: 820px) {
+  .album-navigation { bottom: 7px; }
+}
