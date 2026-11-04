@@ -1,14 +1,20 @@
 .stickers-grid {
-  height: calc(100% - 48px);
+  height: calc(100% - 48px - 5%);
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  align-content: start;
-  gap: 6px;
-  padding: 8px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  align-content: stretch;
+  gap: 1.2%;
+  padding: 1.6%;
 }
 
 .sticker-slot {
+  min-width: 0;
   min-height: 0;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
   padding: 7px;
   border: 1px solid rgba(30, 79, 216, 0.5);
   border-radius: 8px;
@@ -23,4 +29,10 @@
   line-height: 1.05;
   margin: 2px 0 4px;
 }
-.slot-role { font-size: clamp(0.48rem, 1.25vw, 0.62rem); line-height: 1.15; }
+.slot-role {
+  flex: 1;
+  min-height: 0;
+  overflow: hidden;
+  font-size: clamp(0.48rem, 1.25vw, 0.62rem);
+  line-height: 1.15;
+}
