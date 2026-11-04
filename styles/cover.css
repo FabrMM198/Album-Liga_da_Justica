@@ -42,8 +42,17 @@
   font-weight: 800;
   letter-spacing: 6px;
   color: var(--paper);
+  -webkit-text-stroke: 1px var(--hero-gold);
+  paint-order: stroke fill;
   margin: 0;
   line-height: 1;
+}
+
+.cover-footer-text {
+  color: var(--paper);
+  -webkit-text-stroke: 0.5px var(--hero-gold);
+  paint-order: stroke fill;
+  font-weight: 700;
 }
 
 .cover-subtitle {
@@ -78,9 +87,18 @@
   line-height: 1;
   letter-spacing: 4px;
   color: var(--justice-blue);
+  -webkit-text-stroke: 1px var(--hero-gold);
+  paint-order: stroke fill;
 }
 
-.cover-back-footer-text { color: var(--justice-blue); max-width: 320px; font-size: 0.9rem; line-height: 1.4; }
+.cover-back-footer-text {
+  color: var(--justice-blue);
+  -webkit-text-stroke: 0.5px var(--hero-gold);
+  paint-order: stroke fill;
+  max-width: 320px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
 .barcode-container { display: flex; flex-direction: column; align-items: center; }
 .barcode { height: 42px; display: flex; gap: 3px; align-items: stretch; }
 .bar { width: 3px; background: var(--bg-ink); }
