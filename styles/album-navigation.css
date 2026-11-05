@@ -1,12 +1,9 @@
 .album-navigation {
   position: fixed;
-  left: 50%;
-  bottom: 18px;
+  inset: 0;
   z-index: 20;
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  transform: translateX(-50%);
+  pointer-events: none;
+  display: block;
 }
 
 .album-navigation button {
@@ -18,11 +15,26 @@
   color: var(--paper);
   font-size: 1.35rem;
   cursor: pointer;
+  pointer-events: auto;
+}
+
+.album-navigation .previous-page {
+  position: fixed;
+  left: 18px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.album-navigation .next-page {
+  position: fixed;
+  right: 18px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .album-navigation button:disabled { opacity: 0.35; cursor: default; }
-.page-counter { min-width: 70px; text-align: center; font-size: 0.85rem; }
 
-@media (max-height: 820px) {
-  .album-navigation { bottom: 7px; }
+@media (max-width: 700px) {
+  .album-navigation .previous-page { left: 6px; }
+  .album-navigation .next-page { right: 6px; }
 }

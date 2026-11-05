@@ -21,7 +21,12 @@
   background: rgba(255, 255, 255, 0.8);
 }
 
-.slot-number { color: var(--hero-red); font-size: 0.72rem; font-weight: 800; }
+.slot-number { 
+    color: var(--hero-red); 
+    font-size: 0.72rem; 
+    font-weight: 800; 
+}
+
 .slot-name {
   color: var(--bg-panel);
   font-size: 0.78rem;
@@ -29,6 +34,7 @@
   line-height: 1.05;
   margin: 2px 0 4px;
 }
+
 .slot-role {
   flex: 1;
   min-height: 0;
