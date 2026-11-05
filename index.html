@@ -14,8 +14,10 @@
 </head>
 
 <body>
-    <!--Capa-->
-    <div class="page page-cover">
+    <div class="album-viewport">
+        <div class="flip-book" id="book">
+            <!--Capa-->
+            <div class="page page-cover" data-density="hard">
         <div class="page-content cover-content">
             <div class="cover-header">
                 <span class="cover-seal"><img src="./assets/img/DC_Comics.svg.webp" alt="DC Comics" width="90"
@@ -343,8 +345,21 @@
         </div>
     </div>
 
-    <!--Página 10: Contracapa-->
-    <div class="page page-cover-back">
+    <!-- Página 10: Sobre a Coleção -->
+    <div class="page page-right">
+        <div class="page-content">
+            <div class="page-header">
+                <span>10</span>
+                <h3 class="page-title">Sobre a Coleção</h3>
+            </div>
+            <p class="page-description">
+                Este álbum reúne os maiores ícones do Universo DC Comics. Colecione todas as figurinhas e complete sua jornada pelos fundadores da Liga da Justiça, heróis místicos e a lendária Sociedade da Justiça!
+            </p>
+        </div>
+    </div>
+
+    <!--Contracapa-->
+    <div class="page page-cover-back" data-density="hard">
         <div class="page-content cover-back-content">
             <div class="cover-back-header">
                 <span class="cover-back-seal"><img src="./assets/img/DC_Comics.svg.webp" alt="DC Comics" width="90" height="90"></span>
@@ -356,25 +371,26 @@
             </div>
             <p class="cover-back-footer-text">Esse album é um projeto para meus estudos em desenvolvimento de software. Está disponível para visualização e download gratuito no GitHub.</p>
             <div class="barcode-container">
-                            <div class="barcode">
-                                <!-- Simulated barcode lines -->
-                                <div class="bar"></div>
-                                <div class="bar thin"></div>
-                                <div class="bar"></div>
-                                <div class="bar thick"></div>
-                                <div class="bar thin"></div>
-                                <div class="bar"></div>
-                                <div class="bar thick"></div>
-                                <div class="bar"></div>
-                                <div class="bar thin"></div>
-                                <div class="bar thick"></div>
-                            </div>
-                            <span class="barcode-number">9 325575 108494</span>
-                        </div>
+                <div class="barcode">
+                    <div class="bar"></div>
+                    <div class="bar thin"></div>
+                    <div class="bar"></div>
+                    <div class="bar thick"></div>
+                    <div class="bar thin"></div>
+                    <div class="bar"></div>
+                    <div class="bar thick"></div>
+                    <div class="bar"></div>
+                    <div class="bar thin"></div>
+                    <div class="bar thick"></div>
+                </div>
+                <span class="barcode-number">9 325575 108494</span>
+            </div>
         </div>
-
+    </div>
+        </div>
     </div>
 
+    <script src="https://cdn.jsdelivr.net/npm/page-flip@2.0.7/dist/js/page-flip.browser.min.js"></script>
     <script src="app.js"></script>
 </body>
 
