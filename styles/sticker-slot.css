@@ -46,6 +46,7 @@
   flex: 1;
   min-height: 0;
   overflow: hidden;
+  text-align: justify;
   font-size: clamp(0.48rem, 1.25vw, 0.62rem);
   line-height: 1.15;
 }
