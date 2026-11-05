@@ -26,10 +26,8 @@ body {
   background-image: radial-gradient(circle at center, var(--bg-night) 0%, var(--bg-panel) 60%, var(--bg-ink) 100%);
   color: var(--paper);
   font-family: 'Inter', sans-serif;
-  min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
   position: relative;
 }
