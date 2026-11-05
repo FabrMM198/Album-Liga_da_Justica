@@ -16,6 +16,7 @@
 }
 
 .cover-content {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -25,11 +26,27 @@
 }
 
 .cover-header {
-  position: relative;
-  top: -30px;
+  position: absolute;
+  top: 24px;
+  left: 24px;
+  z-index: 2;
+}
+
+.cover-seal {
+  display: block;
+  line-height: 0;
+}
+
+.cover-seal img {
+  width: 90px;
+  height: auto;
 }
 
 .cover-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -49,6 +66,11 @@
 }
 
 .cover-footer-text {
+  position: absolute;
+  left: 40px;
+  right: 40px;
+  bottom: 45px;
+  margin: 0;
   color: var(--paper);
   -webkit-text-stroke: 0.5px var(--hero-gold);
   paint-order: stroke fill;
